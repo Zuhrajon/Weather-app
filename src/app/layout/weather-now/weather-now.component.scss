@@ -1,0 +1,83 @@
+.weather-forecast {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px 0;
+}
+
+.weather-forecast-block {
+    padding: 30px;
+    flex-basis: 70%;
+    border-radius: 40px;
+}
+
+.weather-forecast-block h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.weather-forecast-block h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0 0 0 ;
+}
+
+.weather-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0 ;
+}
+
+.weather-info-block {
+    display: flex;
+    gap: 20px;
+}
+
+.weather-info-block p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.temperature img {
+    width: 80px;
+    height: 80px;
+}
+
+.scroll-block {
+    margin: 20px;
+}
+
+.weather-forecast tbody {
+    display: flex;
+    gap: 20px;
+}
+
+.weather-forecast tr {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 2px solid rgb(52, 49, 49);
+    border-radius: 20px;
+    background-color: white;
+}
+
+.weather-forecast td {
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+}
+
+.weather-forecast img {
+    width: 60px;
+    height: 60px;
+}
