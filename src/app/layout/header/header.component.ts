@@ -8,5 +8,20 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  isDarkTheme: boolean = false;
 
+  toggleTheme() {
+    this.isDarkTheme = !this.isDarkTheme;
+    const body = document.body;
+
+    if (this.isDarkTheme) {
+      body.classList.add('dark-theme');
+      body.classList.remove('light-theme');
+      console.log("rfrfrfrr");
+      
+    } else {
+      body.classList.remove('dark-theme');
+      body.classList.add('light-theme');
+    }
+  }
 }

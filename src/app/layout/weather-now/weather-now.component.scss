@@ -54,7 +54,7 @@
 }
 
 .scroll-block {
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .weather-forecast tbody {
@@ -66,9 +66,10 @@
     display: flex;
     flex-direction: column;
     padding: 30px;
-    border: 2px solid rgb(52, 49, 49);
+    border: 2px solid var(--card-background);
+    background-color: var(--card-background);
+    color: var(--card-color);
     border-radius: 20px;
-    background-color: white;
 }
 
 .weather-forecast td {

@@ -9,14 +9,12 @@
     justify-content: center;
 }
 
-
-
 .header-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 50px;
-    width: 90%;
+    width: 88%;
 }
 
 .icon-block {
@@ -42,4 +40,6 @@
 .change-fon-btn {
     padding: 10px 20px;
     border-radius: 10px;
+    background-color: var(--button-background);
+    color: var(--button-color);
 }

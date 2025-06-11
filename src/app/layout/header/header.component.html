@@ -10,8 +10,8 @@
             <li>О нас</li> 
         </ul>
     </div>
-    <button class="change-fon-btn">
-        Темный фон 
+    <button class="change-fon-btn" (click)="toggleTheme()" >
+        {{ isDarkTheme ? 'Светлый фон' : 'Темный фон' }} 
     </button>
    </div>
 </div>

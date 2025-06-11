@@ -1,0 +1,25 @@
+:root {
+    --background-color: #cef4ea;
+    --text-color: #13465c;
+    --card-background: #395866;
+    --card-color: #cef4ea;
+    --button-background: #2a4c5b;
+    --button-color: #cef4ea;
+    --input-background: #fff;
+    --input-color: #13465c;
+    --input-border-active: #13465c;
+}
+
+
+.dark-theme {
+    --background-color: #13465c;
+    --text-color: #cef4ea;
+    --card-background: #cef4ea;
+    --card-color: #395866;
+    --button-background: #cef4ea;
+    --button-color: #2a4c5b;
+    --input-background: #13465c;
+    --input-color: #fff;
+    --input-border-active: #87b5c9;
+}
+

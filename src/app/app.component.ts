@@ -14,4 +14,5 @@ import { WeatherNowComponent } from "./layout/weather-now/weather-now.component"
 })
 export class AppComponent {
   title = 'weather-app';
+
 }
