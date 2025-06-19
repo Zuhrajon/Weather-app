@@ -1,20 +1,31 @@
 <div class="header">
-   <div class="header-block">
-     <div class="icon-block">
-        <img src="/assets/header-logo.svg" alt="">
-        <h4 class="logo-text">Погода</h4>
+    <div class="header-block">
+        <div class="icon-block">
+            <img src="/assets/header-logo.svg" alt="">
+            <h4 class="logo-text">Погода</h4>
+        </div>
+        <div class="container">
+            <div class="text-header">
+                <ul class="menu ">
+                    <li>Главная</li>
+                    <li>О нас</li>
+                </ul>
+                <div class="burger-menu" (click)="toggleMenu()">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+            <button class="change-fon-btn" (click)="toggleTheme()">
+                {{ isDarkTheme ? 'Светлый фон' : 'Темный фон' }}
+            </button>
+        </div>
     </div>
-    <div class="text-header">
-        <ul>
-            <li>Главная</li> 
-            <li>О нас</li> 
-        </ul>
-    </div>
-    <button class="change-fon-btn" (click)="toggleTheme()" >
-        {{ isDarkTheme ? 'Светлый фон' : 'Темный фон' }} 
-    </button>
-   </div>
 </div>
 
-
-
+<div class="burger-dropdown" [class.active]="isMenuOpen">
+    <ul>
+        <li>Главная</li>
+        <li>О нас</li>
+    </ul>
+</div>

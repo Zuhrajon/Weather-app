@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   isDarkTheme: boolean = false;
+  isMenuOpen = false;
+
 
   toggleTheme() {
     this.isDarkTheme = !this.isDarkTheme;
@@ -17,11 +19,14 @@ export class HeaderComponent {
     if (this.isDarkTheme) {
       body.classList.add('dark-theme');
       body.classList.remove('light-theme');
-      console.log("rfrfrfrr");
       
     } else {
       body.classList.remove('dark-theme');
       body.classList.add('light-theme');
     }
   }
+  
+    toggleMenu() {
+        this.isMenuOpen = !this.isMenuOpen;
+    }
 }
